@@ -1,0 +1,11 @@
+.env
+.runtime/
+.venv/
+data/
+__pycache__/
+*.pyc
+plugin/bin/
+plugin/obj/
+tests/harness/bin/
+tests/harness/obj/
+dist/

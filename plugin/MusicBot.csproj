@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnginePath Condition="'$(EnginePath)' == ''">../.runtime/engine</EnginePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="TS3AudioBot"><HintPath>$(EnginePath)/TS3AudioBot.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TSLib"><HintPath>$(EnginePath)/TSLib.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

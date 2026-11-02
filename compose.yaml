@@ -1,0 +1,12 @@
+services:
+  musicbot:
+    build: .
+    init: true
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - music-data:/data
+    # Outbound UDP to TeamSpeak and HTTPS to music providers; no inbound ports.
+    stop_grace_period: 20s
+volumes:
+  music-data:

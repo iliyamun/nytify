@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnginePath Condition="'$(EnginePath)' == ''">../../.runtime/engine</EnginePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../plugin/MusicBot.csproj" />
+    <Reference Include="TS3AudioBot"><HintPath>$(EnginePath)/TS3AudioBot.dll</HintPath></Reference>
+    <Reference Include="TSLib"><HintPath>$(EnginePath)/TSLib.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>
